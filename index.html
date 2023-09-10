@@ -11,21 +11,27 @@
   </head>
   <body class="font-poppins bg-background overflow-x-hidden">
     <!-- Header -->
-    <header class="fixed flex w-full items-center justify-between p-4">
+    <header
+      class="fixed flex w-full items-center justify-between p-4 tablet:p-6"
+    >
       <a href="#home">
-        <h2 class="font-poppins text-main text-xl">Writings.Dev</h2>
+        <h2 class="font-poppins text-main text-xl tablet:text-3xl">
+          Writings.Dev
+        </h2>
       </a>
       <nav
-        class="bg-background/80 invisible absolute left-0 right-0 top-16 w-full rounded-b-xl text-white opacity-0 duration-300"
+        class="bg-background/80 invisible absolute left-0 right-0 top-16 w-full rounded-b-xl text-white opacity-0 duration-300 tablet:visible tablet:static tablet:opacity-100"
       >
-        <ul class="flex flex-col gap-4 p-5">
-          <li><a href="#categories" class="p-1">categories</a></li>
-          <li><a href="#articles" class="p-1">articles</a></li>
-          <li><a href="#about" class="p-1">about</a></li>
+        <ul
+          class="flex flex-col gap-4 p-5 tablet:flex-row tablet:justify-end tablet:gap-8 tablet:p-0"
+        >
+          <li><a href="#categories" class="p-1 text-lg">categories</a></li>
+          <li><a href="#articles" class="p-1 text-lg">articles</a></li>
+          <li><a href="#about" class="p-1 text-lg">about</a></li>
         </ul>
       </nav>
       <div
-        class="menu-toggle relative flex h-8 w-[35px] items-center justify-center laptop:hidden"
+        class="menu-toggle relative flex h-8 w-[35px] items-center justify-center tablet:hidden"
       >
         <button
           id="hamburger"
