@@ -1,3 +1,23 @@
+/* Fonts Family */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Tailwind Rules */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hamburger-active > span:first-child {
+  @apply -rotate-[40deg];
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:last-child {
+  @apply rotate-[40deg];
+}
+
+nav.slide {
+  @apply visible opacity-100 backdrop-blur-sm;
+}

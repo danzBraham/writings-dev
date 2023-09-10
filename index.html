@@ -4,11 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Writings Dev</title>
+    <!-- Style CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Script JS -->
+    <script src="./js/script.js" defer></script>
   </head>
-  <body>
-    <h1 class="bg-blue-400 p-6 text-center text-5xl font-bold text-gray-700">
-      Hello Tailwind
-    </h1>
+  <body class="font-poppins bg-background overflow-x-hidden">
+    <!-- Header -->
+    <header class="fixed flex w-full items-center justify-between p-4">
+      <a href="#home">
+        <h2 class="font-poppins text-main text-xl">Writings.Dev</h2>
+      </a>
+      <nav
+        class="bg-background/80 invisible absolute left-0 right-0 top-16 w-full rounded-b-xl text-white opacity-0 duration-300"
+      >
+        <ul class="flex flex-col gap-4 p-5">
+          <li><a href="#categories" class="p-1">categories</a></li>
+          <li><a href="#articles" class="p-1">articles</a></li>
+          <li><a href="#about" class="p-1">about</a></li>
+        </ul>
+      </nav>
+      <div
+        class="menu-toggle relative flex h-8 w-[35px] items-center justify-center laptop:hidden"
+      >
+        <button
+          id="hamburger"
+          class="tex absolute flex w-full flex-col items-end gap-2"
+        >
+          <span
+            class="bg-main block h-[3px] w-full origin-top-right rounded transition duration-300 ease-in-out"
+          ></span>
+          <span
+            class="bg-main block h-[3px] w-full rounded transition duration-300 ease-in-out"
+          ></span>
+          <span
+            class="bg-main block h-[3px] w-full origin-bottom-right rounded transition duration-300 ease-in-out"
+          ></span>
+        </button>
+      </div>
+    </header>
   </body>
 </html>
