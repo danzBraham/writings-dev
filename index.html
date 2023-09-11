@@ -12,7 +12,7 @@
   <body class="overflow-x-hidden bg-background font-poppins">
     <!-- Header -->
     <header
-      class="fixed flex w-full items-center justify-between p-4 tablet:p-6"
+      class="fixed flex w-full items-center justify-between bg-background p-4 tablet:p-6"
     >
       <a href="#home">
         <h2 class="font-poppins text-xl text-main tablet:text-2xl">
@@ -52,7 +52,8 @@
 
     <!-- Main -->
     <main>
-      <section id="home" class="flex flex-col items-center pt-28">
+      <!-- Home -->
+      <section id="home" class="flex flex-col items-center px-5 pt-28">
         <img
           src="./assets/logo.png"
           alt="Logo"
@@ -64,6 +65,59 @@
         <p class="text-center text-sm text-white tablet:text-lg">
           Curated collection of articles for busy Developers
         </p>
+      </section>
+      <!-- Categories -->
+      <span class="mt-8 block h-[3px] w-full bg-[#4D4D4D]"></span>
+      <section id="categories" class="flex items-center gap-2 px-5">
+        <div class="flex gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="h-4 w-4"
+          >
+            <g clip-path="url(#clip0_31_323)">
+              <path
+                d="M6 6H0V0H6V6ZM15 0H9V6H15V0ZM24 0H18V6H24V0ZM6 9H0V15H6V9ZM15 9H9V15H15V9ZM24 9H18V15H24V9ZM6 18H0V24H6V18ZM15 18H9V24H15V18ZM24 18H18V24H24V18Z"
+                fill="#909090"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_31_323">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="h-4 w-4"
+          >
+            <g clip-path="url(#clip0_31_325)">
+              <path
+                d="M0 4.36364H24V0H0V4.36364ZM0 14.1818H24V9.81818H0V14.1818ZM0 24H24V19.6364H0V25.0909V24Z"
+                fill="#909090"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_31_325">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <ul
+          class="flex items-center gap-2 overflow-auto p-2 text-sm text-white"
+        >
+          <li>Javascript</li>
+          <li>DevOps</li>
+          <li>Cloud</li>
+          <li>Terraform</li>
+          <li>Architecture</li>
+          <li>Scalability</li>
+          <li>Explainers</li>
+        </ul>
       </section>
     </main>
   </body>
