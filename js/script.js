@@ -11,7 +11,9 @@ menuToggle.addEventListener("click", () => {
 // Articles
 const getArticles = async () => {
   try {
-    const res = await fetch("../articles.json");
+    const res = await fetch(
+      "https://github.com/danzBraham/writings-dev/blob/main/articles.json",
+    );
     if (!res.ok) {
       throw new Error(`Failed to fetch JSON: ${res.status} ${res.statusText}`);
     }
