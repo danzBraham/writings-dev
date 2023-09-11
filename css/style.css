@@ -570,6 +570,26 @@ video {
   margin: auto;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.mb-\[2000px\]{
+  margin-bottom: 2000px;
+}
+
 .block{
   display: block;
 }
@@ -592,6 +612,22 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-3\/4{
+  width: 75%;
+}
+
+.w-1\/4{
+  width: 25%;
+}
+
+.w-3\/5{
+  width: 60%;
+}
+
+.w-2\/5{
+  width: 40%;
 }
 
 .origin-bottom-right{
@@ -634,6 +670,10 @@ video {
   overflow-x: hidden;
 }
 
+.scroll-smooth{
+  scroll-behavior: smooth;
+}
+
 .rounded{
   border-radius: 0.25rem;
 }
@@ -657,6 +697,11 @@ video {
   background-color: rgb(255 117 117 / var(--tw-bg-opacity));
 }
 
+.bg-red-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 .p-1{
   padding: 0.25rem;
 }
@@ -669,8 +714,29 @@ video {
   padding: 1.25rem;
 }
 
+.pt-8{
+  padding-top: 2rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
+}
+
+.pt-28{
+  padding-top: 7rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
 .font-poppins{
   font-family: Poppins, sans-serif;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xl{
@@ -678,9 +744,27 @@ video {
   line-height: 1.75rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-\[22px\]{
+  font-size: 22px;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.italic{
+  font-style: italic;
 }
 
 .text-main{
@@ -746,10 +830,6 @@ nav.slide{
     position: static;
   }
 
-  .tablet\:flex{
-    display: flex;
-  }
-
   .tablet\:hidden{
     display: none;
   }
@@ -762,44 +842,16 @@ nav.slide{
     justify-content: flex-end;
   }
 
-  .tablet\:justify-evenly{
-    justify-content: space-evenly;
-  }
-
   .tablet\:gap-8{
     gap: 2rem;
-  }
-
-  .tablet\:p-8{
-    padding: 2rem;
-  }
-
-  .tablet\:p-6{
-    padding: 1.5rem;
   }
 
   .tablet\:p-0{
     padding: 0px;
   }
 
-  .tablet\:px-6{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .tablet\:py-8{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .tablet\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .tablet\:py-6{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  .tablet\:p-6{
+    padding: 1.5rem;
   }
 
   .tablet\:text-2xl{
@@ -807,18 +859,7 @@ nav.slide{
     line-height: 2rem;
   }
 
-  .tablet\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .tablet\:opacity-100{
     opacity: 1;
-  }
-}
-
-@media (min-width: 1024px){
-  .laptop\:hidden{
-    display: none;
   }
 }

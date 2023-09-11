@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,18 +9,18 @@
     <!-- Script JS -->
     <script src="./js/script.js" defer></script>
   </head>
-  <body class="font-poppins bg-background overflow-x-hidden">
+  <body class="overflow-x-hidden bg-background font-poppins">
     <!-- Header -->
     <header
       class="fixed flex w-full items-center justify-between p-4 tablet:p-6"
     >
       <a href="#home">
-        <h2 class="font-poppins text-main text-xl tablet:text-3xl">
+        <h2 class="font-poppins text-xl text-main tablet:text-2xl">
           Writings.Dev
         </h2>
       </a>
       <nav
-        class="bg-background/80 invisible absolute left-0 right-0 top-16 w-full rounded-b-xl text-white opacity-0 duration-300 tablet:visible tablet:static tablet:opacity-100"
+        class="invisible absolute left-0 right-0 top-16 w-full rounded-b-xl bg-background/80 text-white opacity-0 duration-300 tablet:visible tablet:static tablet:opacity-100"
       >
         <ul
           class="flex flex-col gap-4 p-5 tablet:flex-row tablet:justify-end tablet:gap-8 tablet:p-0"
@@ -38,16 +38,30 @@
           class="tex absolute flex w-full flex-col items-end gap-2"
         >
           <span
-            class="bg-main block h-[3px] w-full origin-top-right rounded transition duration-300 ease-in-out"
+            class="block h-[3px] w-full origin-top-right rounded bg-main transition duration-300 ease-in-out"
           ></span>
           <span
-            class="bg-main block h-[3px] w-full rounded transition duration-300 ease-in-out"
+            class="block h-[3px] w-full rounded bg-main transition duration-300 ease-in-out"
           ></span>
           <span
-            class="bg-main block h-[3px] w-full origin-bottom-right rounded transition duration-300 ease-in-out"
+            class="block h-[3px] w-full origin-bottom-right rounded bg-main transition duration-300 ease-in-out"
           ></span>
         </button>
       </div>
     </header>
+
+    <!-- Main -->
+    <main>
+      <section id="home" class="flex flex-col items-center pt-28">
+        <img src="./assets/logo.png" alt="Logo" class="w-3/5" />
+        <h1 class="mt-5 text-[22px] italic text-main">
+          Writings for Developers
+        </h1>
+        <p class="text-center text-sm text-white">
+          Curated collection of articles for busy Developers
+        </p>
+      </section>
+      <section class="mb-[2000px]"></section>
+    </main>
   </body>
 </html>
