@@ -20,7 +20,7 @@ module.exports = {
         background: "#232830",
       },
       boxShadow: {
-        darkBlue: "0 20px 0 -8px rgba(112, 124, 192, 1)",
+        darkBlue: "0 16px 0 -6px rgba(112, 124, 192, 1)",
       },
     },
   },

@@ -12,7 +12,7 @@
   <body class="overflow-x-hidden bg-background font-poppins">
     <!-- Header -->
     <header
-      class="fixed flex w-full items-center justify-between bg-background p-4 tablet:p-6"
+      class="fixed z-10 flex w-full items-center justify-between bg-background p-4 tablet:p-6"
     >
       <a href="#home">
         <h2 class="font-poppins text-xl font-medium text-main tablet:text-2xl">
@@ -25,9 +25,9 @@
         <ul
           class="flex flex-col gap-4 p-5 tablet:flex-row tablet:justify-end tablet:gap-8 tablet:p-0"
         >
-          <li><a href="#categories" class="p-1 text-lg">categories</a></li>
-          <li><a href="#articles" class="p-1 text-lg">articles</a></li>
-          <li><a href="#about" class="p-1 text-lg">about</a></li>
+          <li><a href="#categories" class="links">categories</a></li>
+          <li><a href="#articles" class="links">articles</a></li>
+          <li><a href="#about" class="links">about</a></li>
         </ul>
       </nav>
       <div
@@ -59,7 +59,7 @@
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="relative left-10 -z-10 w-3/5 tablet:w-2/6"
+          class="relative left-10 -z-10 w-3/5 tablet:w-2/6 laptop:w-48"
           viewBox="0 0 195 205"
           fill="none"
         >
@@ -98,10 +98,14 @@
             fill="#707CC0"
           />
         </svg>
-        <h1 class="mt-5 text-[22px] italic text-main tablet:text-3xl">
+        <h1
+          class="mt-5 text-[22px] italic text-main tablet:text-3xl laptop:text-7xl"
+        >
           Writings for Developers
         </h1>
-        <p class="text-center text-sm text-white tablet:text-lg">
+        <p
+          class="text-center text-sm text-white tablet:text-lg laptop:mt-4 laptop:text-3xl"
+        >
           Curated collection of articles for busy Developers
         </p>
       </section>
@@ -113,7 +117,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="none"
-            class="h-4 w-4"
+            class="h-4 w-4 laptop:h-6 laptop:w-6"
           >
             <g clip-path="url(#clip0_31_323)">
               <path
@@ -131,7 +135,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="none"
-            class="h-4 w-4"
+            class="h-4 w-4 laptop:h-6 laptop:w-6"
           >
             <g clip-path="url(#clip0_31_325)">
               <path
@@ -147,21 +151,37 @@
           </svg>
         </div>
         <ul
-          class="flex items-center gap-2 overflow-auto p-4 text-sm text-white"
+          class="flex items-center gap-2 overflow-auto p-4 text-sm text-white laptop:text-base"
         >
+          <li>HTML</li>
+          <li>CSS</li>
           <li>Javascript</li>
+          <li>React</li>
           <li>DevOps</li>
           <li>Cloud</li>
           <li>Terraform</li>
           <li>Architecture</li>
           <li>Scalability</li>
-          <li>Explainers</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>Vue.js</li>
+          <li>Angular</li>
+          <li>Python</li>
+          <li>Ruby</li>
+          <li>Java</li>
+          <li>C#</li>
+          <li>PHP</li>
+          <li>Go</li>
+          <li>Rust</li>
         </ul>
       </section>
       <!-- Articles -->
-      <section id="articles" class="grid grid-rows-1 gap-8 px-5 pt-10">
+      <section
+        id="articles"
+        class="grid grid-cols-1 gap-8 px-5 pt-10 tablet:grid-cols-2 laptop:grid-cols-3"
+      >
         <div
-          class="rounded-3xl bg-white p-5 transition duration-300 ease-in-out hover:-translate-y-5 hover:shadow-darkBlue"
+          class="rounded-3xl bg-white p-5 transition duration-300 ease-in-out hover:-translate-y-4 hover:shadow-darkBlue"
         >
           <div
             class="h-40 rounded-2xl bg-cover bg-center bg-no-repeat shadow-md"
@@ -472,11 +492,25 @@
       <span class="mt-8 block h-[3px] w-full bg-[#4D4D4D]"></span>
     </main>
     <footer
+      id="about"
       class="flex items-center justify-center gap-2 p-5 text-sm text-white"
     >
-      <p class="font-medium">writings.dev design</p>
-      <p class="rounded-md bg-[#1D9BF0] px-2 py-1">
-        <a href="https://twitter.com/kamrify" target="_blank">by @kamrify</a>
+      <p class="font-medium">writings.dev design by</p>
+      <p
+        class="rounded-md bg-[#1D9BF0] px-2 py-1 transition duration-100 ease-in-out hover:bg-[#7ec7fb]"
+      >
+        <a
+          href="https://twitter.com/kamrify"
+          target="_blank"
+          class="flex items-center justify-center gap-1"
+        >
+          <svg fill="currentColor" class="h-5 w-5">
+            <path
+              d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"
+            ></path>
+          </svg>
+          <span class="block">kamrify</span>
+        </a>
       </p>
     </footer>
   </body>

@@ -6,6 +6,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.links {
+  @apply relative text-sm font-semibold duration-100 laptop:text-lg;
+}
+
+.links::after {
+  content: "";
+  @apply absolute -bottom-0.5 left-0 h-[2px] w-0 bg-main duration-300 hover:w-full;
+}
+
 .hamburger-active > span:first-child {
   @apply -rotate-[40deg];
 }
@@ -20,4 +29,16 @@
 
 nav.slide {
   @apply visible opacity-100 backdrop-blur-sm;
+}
+
+::-webkit-scrollbar {
+  @apply h-1 w-1;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-lg bg-main;
 }
