@@ -566,28 +566,8 @@ video {
   top: 4rem;
 }
 
-.m-auto{
-  margin: auto;
-}
-
-.mt-8{
-  margin-top: 2rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.mt-6{
-  margin-top: 1.5rem;
-}
-
 .mt-5{
   margin-top: 1.25rem;
-}
-
-.mb-\[2000px\]{
-  margin-bottom: 2000px;
 }
 
 .block{
@@ -606,28 +586,16 @@ video {
   height: 3px;
 }
 
+.w-3\/5{
+  width: 60%;
+}
+
 .w-\[35px\]{
   width: 35px;
 }
 
 .w-full{
   width: 100%;
-}
-
-.w-3\/4{
-  width: 75%;
-}
-
-.w-1\/4{
-  width: 25%;
-}
-
-.w-3\/5{
-  width: 60%;
-}
-
-.w-2\/5{
-  width: 40%;
 }
 
 .origin-bottom-right{
@@ -666,6 +634,10 @@ video {
   gap: 1rem;
 }
 
+.justify-self-center{
+  justify-self: center;
+}
+
 .overflow-x-hidden{
   overflow-x: hidden;
 }
@@ -697,11 +669,6 @@ video {
   background-color: rgb(255 117 117 / var(--tw-bg-opacity));
 }
 
-.bg-red-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
 .p-1{
   padding: 0.25rem;
 }
@@ -712,14 +679,6 @@ video {
 
 .p-5{
   padding: 1.25rem;
-}
-
-.pt-8{
-  padding-top: 2rem;
-}
-
-.pt-16{
-  padding-top: 4rem;
 }
 
 .pt-28{
@@ -734,33 +693,23 @@ video {
   font-family: Poppins, sans-serif;
 }
 
+.text-\[22px\]{
+  font-size: 22px;
+}
+
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-\[22px\]{
-  font-size: 22px;
-}
-
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .italic{
@@ -834,6 +783,22 @@ nav.slide{
     display: none;
   }
 
+  .tablet\:w-1\/5{
+    width: 20%;
+  }
+
+  .tablet\:w-4\/5{
+    width: 80%;
+  }
+
+  .tablet\:w-2\/5{
+    width: 40%;
+  }
+
+  .tablet\:w-2\/6{
+    width: 33.333333%;
+  }
+
   .tablet\:flex-row{
     flex-direction: row;
   }
@@ -854,9 +819,27 @@ nav.slide{
     padding: 1.5rem;
   }
 
+  .tablet\:pt-32{
+    padding-top: 8rem;
+  }
+
+  .tablet\:pt-36{
+    padding-top: 9rem;
+  }
+
   .tablet\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .tablet\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .tablet\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .tablet\:opacity-100{
